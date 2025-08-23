@@ -6,6 +6,7 @@ export default function Map(){
         <>
             <h1>This is the  map</h1>
             <Link to="/">Home</Link>
+            
         </>
        
     )
