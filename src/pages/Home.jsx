@@ -19,7 +19,7 @@ export default function Home(){
                     navigate("/map");
                 }
             } else { 
-                alert("ID or password is missing");
+                alert("ID or Password is missing");
             }
         }
     }
