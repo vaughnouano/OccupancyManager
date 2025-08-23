@@ -9,10 +9,18 @@ export default function Home(){
     const navigate = useNavigate();
 
     const handleSubmit = () => {
-        if (studentID && studentPassword){
-            navigate("/map");
+        if (studentID.length !== 11){
+            alert("Invalid Student ID");
         } else {
-            alert("password or username is empty");
+            if (studentID && studentPassword) {
+                if (studentPassword !== "123456" || studentID !== "12-3456-789"){
+                    alert("id or password is incorrect");
+                } else {
+                    navigate("/map");
+                }
+            } else {
+                alert("ID or password is missing");
+            }
         }
     }
 
