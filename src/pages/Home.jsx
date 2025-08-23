@@ -18,7 +18,7 @@ export default function Home(){
                 } else {
                     navigate("/map");
                 }
-            } else {
+            } else { 
                 alert("ID or password is missing");
             }
         }
