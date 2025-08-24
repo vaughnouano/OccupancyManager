@@ -1,0 +1,25 @@
+.container {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 200px;
+  text-align: center; 
+  font-size: 16px;
+}
+
+.table td,
+.table th {
+  border: 1px solid black; 
+  padding: 8px; 
+}
+
+.centerIsle {
+    width: 20px;
+}

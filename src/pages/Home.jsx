@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 
+import styles from "../styles/home.module.css"
+
 export default function Home(){
     
     const [studentID, setStudentID] = useState("");
@@ -28,8 +30,8 @@ export default function Home(){
 
     return (
         <>
-            <div className="container">
-                <div className="header">
+            <div className={styles.container}>
+                <div className={styles.header}>
                     <h1>Welcome to Cit-U</h1>
                     <h2>If you are student here</h2>
                 </div>
