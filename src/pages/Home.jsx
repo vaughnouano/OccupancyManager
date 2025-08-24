@@ -8,21 +8,23 @@ export default function Home(){
 
     const navigate = useNavigate();
 
+    // Temporary data
     const handleSubmit = () => {
-        if (studentID.length !== 11){
-            alert("Invalid Student ID");
-        } else {
-            if (studentID && studentPassword) {
-                if (studentPassword !== "123456" || studentID !== "12-3456-789"){
-                    alert("id or password is incorrect");
-                } else {
-                    navigate("/map");
-                }
-            } else { 
-                alert("ID or Password is missing");
-            }
+        if (!studentID || !studentPassword) {
+            alert("ID or Password is misisng");
         }
-    }
+
+        if (studentID.length != 11) {
+            alert("Invalid Student ID");
+        }
+
+        if (studentID !== "12-3456-789" || studentPassword !== "123456") {
+            alert("ID or Password is incorrect");
+            return;
+        }
+
+        navigate("/map")
+    };
 
     return (
         <>
